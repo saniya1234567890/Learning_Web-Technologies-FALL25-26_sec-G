@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Creating Calculator Feature-SUM </title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <br>
+    <label>First Number:</label>
+    <br>
+
+    <br>
+    <input type="number" id="num1">
+    <br>
+
+    <br>
+    <label>Second Number:</label>
+    <br>
+
+    <br>
+    <input type="number" id="num2">
+    <br>
+    
+    <br>
+    <button id="addBtn">Add</button>
+    <br>
+
+    <br>
+    <div id="result">Result: </div>
+    <br>
+    <script>
+        document.getElementById("addBtn").addEventListener("click", function() 
+        
+        {
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let sum = n1 + n2;
+            document.getElementById("result").innerText = "Result: " + sum;
+        });
+
+    </script>
+</body>
+</html>

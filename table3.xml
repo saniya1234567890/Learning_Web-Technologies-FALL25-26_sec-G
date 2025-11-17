@@ -1,0 +1,51 @@
+<informations> 
+  <information>
+   <id> ID </id>
+   <name> NAME </name>
+   <address>
+   <house> HOUSE</house>
+   <street> STREET </street>
+   <area> AREA</area>
+   <district> DISTRICT </district>
+   </address>
+   <department> DEPARTMENT </department>
+   <salary> SALARY </salary>
+ </information>
+
+<information>
+   <id> 1 </id>
+   <name> John Doe </name>
+<address>
+   <house> H# 38</house>
+   <street> R#3 </street>
+   <area> Banani </area>
+   <district> Dhaka </district>
+    </address>
+   <department>sales </department>
+   <salary>200000 </salary>
+</information>
+
+<information>
+   <id>2 </id>
+   <name>Mark Zukerburg </name>
+   <address>  
+   <house> flat# A/1</house>
+   <street>H#20</street>
+   <area>MURPUE </area>
+   <district> Dhaka </district>
+   </address>
+   <department> Account </department>
+   <salary> 12000 </salary>
+</information>
+
+<information>
+   <id> ID </id>
+   <name> NAME </name>
+   <address>   <house> H# 38</house>
+   <street> R#3 </street>
+   <area> motiheel </area>
+   <district> Dhaka </district> </address>
+   <department>Human Resource </department>
+   <salary>30000</salary>
+</information>
+</informations> 
