@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Feature Form</title>
+</head>
+<body>
+<h2>Dynamic Feature Form</h2>
+<label>Enter Field Name:</label>
+<input type="text" id="fieldName">
+<select id="fieldType">
+    <option value="text">Text</option>
+    <option value="email">Email</option>
+    <option value="number">Number</option>
+    <option value="radio">Radio</option>
+    <option value="date">Date of Birth</option>
+</select>
+<button id="addBtn">Add</button>
+<br><br>
+<div id="newFieldArea"></div>
+<h3>Saved Output:</h3>
+<div id="output"></div>
+<script>
+document.getElementById("addBtn").onclick = function() {
+    let name = document.getElementById("fieldName").value;
+    let type = document.getElementById("fieldType").value;
+    if (name === "") {
+        alert("Please enter a field name");
+        return;
+    }
+    document.getElementById("newFieldArea").innerHTML = "";
+    let label = document.createElement("label");
+    label.innerHTML = name + ": ";
+    let input = document.createElement("input");
+    input.type = type;
+    input.id = "newInput";
+    let saveBtn = document.createElement("button");
+    saveBtn.innerHTML = "SAVE";
+    saveBtn.onclick = function() {
+        let value = document.getElementById("newInput").value;
+        let out = document.getElementById("output");
+        out.innerHTML += "<p><b>" + name + "</b>: " + value + "</p>";
+    };
+    let area = document.getElementById("newFieldArea");
+    area.appendChild(label);
+    area.appendChild(input);
+    area.appendChild(saveBtn);
+};
+</script>
+</body>
+</html>
